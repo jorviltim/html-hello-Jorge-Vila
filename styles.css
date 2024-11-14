@@ -25,7 +25,7 @@
 }
 
 #inicio .contenedor header .titulo{/*para dar formato al titulo que esta dentro de header poniendolo en el medio*/
-    width: 400px; 
+    width: 500px; 
     margin: 0 auto;
     /* background-color: aqua; para ver el centrado y lo que ocupa */
 
@@ -34,9 +34,48 @@
 
 /*_____________________ELEMENTOS MAIN_______________________________*/
 
-#inicio .contenedor main{
+#inicio .contenedor .contenido{
     width: 100%;
     height: 80vh;
-    overflow-y: scroll;/* si sobrepasa mi contenidoel tamaño de la pagina hacer scroll*/
+   /* overflow-y: scroll; si sobrepasa mi contenidoel tamaño de la pagina hacer scroll*/
 }
 
+.post{
+    width: 500px; /*para que tenga la misma anchura que el h1 del headere principal*/
+    margin: 20px auto;
+}
+
+.post .post-header{
+    width: 100%;
+    display:flex;/*me coloca los elementos en linea*/
+    justify-content: space-between;/*me añade espacio entre span y h2 */
+    align-items: center;/* me alinea al centro los dos elementos*/
+    padding: 0 10px;/*con esto ledecimos que cree un padding lateral,
+     pero en la fecha ocasiona un desvorde de posicion que solucionamos con la siguiente propiedad*/
+    box-sizing: border-box;/*toma como tamaño del el elemento el borde tambien del header*/
+
+}
+
+.post .post-body{
+    width: 100%;
+    height: 400px;
+    overflow: hidden;/*que  oculte el sobrante del post-body gris */
+}
+.post .post-body img{
+    width: 100%;
+    height: 400px;
+    object-fit: cover;/*para adaptar la imagen  sin que  pierda propiedades.*/
+    object-position: center;/*para adaptar la imagen desde el centro*/
+}
+.post .post-footer{
+    width: 100%;
+    height: auto;
+    padding: 10px 10px;
+    box-sizing: border-box;
+    background-color: white;
+}
+
+.post .post-footer p{
+    text-align: justify;
+    text-transform: capitalize;
+}
