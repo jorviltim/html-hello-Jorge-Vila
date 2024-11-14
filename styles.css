@@ -79,6 +79,8 @@ background: linear-gradient(to bottom right, red,blue,purple,orange);
     object-fit: cover;/*para adaptar la imagen  sin que  pierda propiedades.*/
     object-position: center;/*para adaptar la imagen desde el centro*/
 }
+
+
 .post .post-footer{
     width: 100%;
     height: auto;
