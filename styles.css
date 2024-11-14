@@ -4,16 +4,22 @@
     margin: 0;
     border: 0;
     padding: 0;
+    
 }
+
 body{
-background-color: #ccc;
+/*background-color: #ccc;*/
+min-height: 100%;
+height: auto;
+background: linear-gradient(to bottom right, red,blue,purple,orange);
 }
 
 
 /*_____________________ELEMENTOS HEADER_______________________________*/
 
 #inicio{/*para dar formato a header gris a la paginaentera*/
-   background-color: #ccc;
+   /*background-color: #ccc;*/
+   background: linear-gradient(to bottom right, red,blue,purple,orange);
 }
 
 #inicio .contenedor header{/*para dar formato a header blanco*/
@@ -27,6 +33,8 @@ background-color: #ccc;
     width: 500px; 
     margin: 0 auto;
     font-family: "Black Ops One", system-ui;
+    text-decoration: 2px underline wavy;
+    
     /* background-color: aqua; para ver el centrado y lo que ocupa */
 
 }
@@ -55,6 +63,8 @@ background-color: #ccc;
     padding: 0 10px;/*con esto ledecimos que cree un padding lateral,
      pero en la fecha ocasiona un desvorde de posicion que solucionamos con la siguiente propiedad*/
     box-sizing: border-box;/*toma como tamaño del el elemento el borde tambien del header*/
+    font-family: "Dancing Script", cursive;
+    font-weight: bold;
 
 }
 
@@ -80,4 +90,5 @@ background-color: #ccc;
 .post .post-footer p{
     text-align: justify;
     text-transform: capitalize;
+    font-family: "Edu AU VIC WA NT Pre", cursive;
 }
